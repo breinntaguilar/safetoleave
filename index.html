@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="testApp">
+  <head>
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="testcontroller.js" type="text/javascript"></script>
+  </head>
+  <body ng-controller="testController">
+    <form class="form-inline" test="{{a}}">
+      <div class="form-group">
+        <hr>
+        <label for="exampleInputName2">Name</label>
+        <input type="time" class="form-control" id="myTime" ng-model="myTime">
+        <hr>
+        <h1>You're Logout time is {{timeOut | date: "hh:mm a"}}!</h1>
+        <h1 class="text-success" ng-show="safeToGo">It is now safe to go home.</h1>
+        <h1 class="text-danger" ng-hide="safeToGo">It is NOT YET safe to go home.</h1>
+        <h1>You still have {{timeDiff}} hrs to render in the office.</h1>
+      </div>
+    </form>
+  </body>
+</html>

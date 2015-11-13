@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  </head>
+  <body>
+	<form class="form-inline">
+	  <div class="form-group">
+	  	<hr>
+	    <h3><span class="label label-primary">Name</span></h3>
+	    <input type="text" class="form-control" id="yourNameField" ng-model="yourName" placeholder="Enter a name here">
+	    <hr>
+	    <h1>Hello {{yourName}}!</h1>
+	  </div>
+	</form>
+  </body>
+</html>
+
