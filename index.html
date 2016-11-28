@@ -15,7 +15,7 @@
         <h1>You're Logout time is {{timeOut | date: "hh:mm a"}}!</h1>
         <h1 class="text-success" ng-show="safeToGo">It is now safe to go home.</h1>
         <h1 class="text-danger" ng-hide="safeToGo">It is NOT YET safe to go home.</h1>
-        <h1>You still have {{timeDiff}} hrs to render in the office.</h1>
+        <h1 ng-hide="safeToGo">You still have {{timeDiff}} hrs to render in the office.</h1>
       </div>
     </form>
   </body>
