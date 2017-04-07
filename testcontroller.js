@@ -3,6 +3,7 @@ angular.module('testApp', [])
     $scope.safeToGo = false;
     $scope.timeDiff = 0;
     //$scope.timeNow = null;
+    //test modification
     $scope.timeOut = null;
     $scope.$watch("myTime", function(){
       if ($scope.myTime){
